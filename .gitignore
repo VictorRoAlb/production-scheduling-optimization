@@ -8,13 +8,20 @@ models/
 artifacts/
 *.xlsx
 *.xls
-*.csv
 *.rds
 *.RData
 *.pdf
 *.docx
 *.pptx
 *.zip
+
+# Allow safe public examples
+!examples/
+!examples/README.md
+!examples/instance_csv/
+!examples/instance_csv/*.csv
+!results/
+!results/*.md
 
 # Secrets
 .env
@@ -42,3 +49,4 @@ env/
 .DS_Store
 Thumbs.db
 desktop.ini
+

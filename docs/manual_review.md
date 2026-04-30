@@ -1,9 +1,25 @@
-# Manual Review Required
+# Manual Review Notes
 
-Candidate source notebooks:
-- `R_setups_Cmax.ipynb`
-- `R_setups_Cmax_Trabajo.ipynb`
+Public source selected from:
 
-Current blockers:
-- absolute local path references remain in notebook cells;
-- source spreadsheets are not bundled in the public export.
+- `Trabajo Completo PPP/Trabajo Completo PPP/Carpeta para Ejecutar`
+- `Trabajo Completo PPP/Trabajo Completo PPP/Carpeta Ejecutada (resultados)`
+
+Excluded on purpose:
+
+- `R_Cmax.xlsx`
+- other Excel workbooks from the original folder;
+- PDF delivery files and execution instructions.
+
+Reason:
+
+- the user explicitly asked not to publish Excel files;
+- the public repository should document the project cleanly without shipping the full course archive.
+
+Included instead:
+
+- CSV exports from `datos_extensiones/`;
+- curated documentation;
+- lightweight public helper scripts;
+- summary of stored computational results.
+
