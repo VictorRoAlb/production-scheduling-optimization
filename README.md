@@ -50,6 +50,10 @@ What is intentionally excluded:
   Helper to parse the computational-results text file format used in the original project.
 - `src/plot_extension_results.py`
   Plotting utility that transforms the public result summary into a method-comparison figure.
+- `notebooks/`
+  Public notebooks that mirror the main execution flow:
+  - `01_instance_generation_from_workbook.ipynb`
+  - `02_benchmark_extensions_execution.ipynb`
 - `src/full_project_workflow/`
   Cleaned versions of the original project scripts:
   - `01_generate_instance_from_workbook.py`
@@ -82,6 +86,8 @@ The public repository exposes the actual implementation logic used in the course
 - how CP-SAT, a genetic algorithm and iterated greedy were compared on the same instance;
 - how result summaries, RPD calculations and machine-wise sequences were reported.
 
+The repository now also includes notebook versions of the two main execution stages so that the workflow is easier to inspect directly on GitHub.
+
 ## Data availability
 
 The original Excel workbook used to define and execute the full coursework instance is not published here. The public repository ships only CSV exports that are sufficient to document the benchmark structure safely.
@@ -92,8 +98,9 @@ If you want to execute the full workflow exactly as staged in the coursework, yo
 
 1. `docs/problem_formulation.md`
 2. `docs/algorithmic_workflow.md`
-3. `results/computational_results_summary.md`
-4. `src/full_project_workflow/`
+3. `notebooks/02_benchmark_extensions_execution.ipynb`
+4. `results/computational_results_summary.md`
+5. `src/full_project_workflow/`
 
 ## Repository note
 

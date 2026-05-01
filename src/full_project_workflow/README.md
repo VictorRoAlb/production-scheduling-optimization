@@ -1,6 +1,7 @@
 # Full Project Workflow
 
 This folder contains cleaned public copies of the two main Python scripts from the coursework project.
+The same execution flow is also available in notebook form under `../notebooks/`.
 
 ## Files
 
