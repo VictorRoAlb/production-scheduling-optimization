@@ -31,6 +31,7 @@ What is intentionally included:
 - repository documentation describing the benchmark extensions and modelling choices;
 - lightweight public scripts for loading the instance and parsing result summaries;
 - cleaned versions of the two main Python scripts used in the academic project;
+- a plotting script that turns the stored result summary into a compact comparison figure;
 - a curated summary of computational results.
 
 What is intentionally excluded:
@@ -47,6 +48,8 @@ What is intentionally excluded:
   Small helper to inspect the exported instance from CSV files.
 - `src/parse_resultados_ppp.py`
   Helper to parse the computational-results text file format used in the original project.
+- `src/plot_extension_results.py`
+  Plotting utility that transforms the public result summary into a method-comparison figure.
 - `src/full_project_workflow/`
   Cleaned versions of the original project scripts:
   - `01_generate_instance_from_workbook.py`
@@ -63,6 +66,12 @@ What is intentionally excluded:
 - `Iterated greedy`
 
 Across the stored benchmark summary, the iterated-greedy implementation was the best-performing method on all six reported extensions of the public result set.
+
+## Visual summary
+
+The repository includes a compact figure comparing objective values and runtimes across the six benchmark extensions.
+
+![PPP method comparison](figures/extension_method_comparison.png)
 
 ## What the public code now shows
 
@@ -86,6 +95,6 @@ If you want to execute the full workflow exactly as staged in the coursework, yo
 3. `results/computational_results_summary.md`
 4. `src/full_project_workflow/`
 
-## Publication notes
+## Repository note
 
-This repository was rebuilt from the stronger source folder after review. The public version avoids uploading spreadsheets and focuses on the technical problem structure, solver framing, algorithmic implementation and results narrative.
+The repository avoids uploading spreadsheets and focuses instead on the technical problem structure, solver framing, algorithmic implementation and results narrative.
