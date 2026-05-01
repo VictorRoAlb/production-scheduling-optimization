@@ -50,6 +50,8 @@ What is intentionally excluded:
   Helper to parse the computational-results text file format used in the original project.
 - `src/plot_extension_results.py`
   Plotting utility that transforms the public result summary into a method-comparison figure.
+- `src/build_final_results_table.py`
+  Small utility that renders the final extension-wise results table as a clean figure.
 - `notebooks/`
   Public notebooks that mirror the main execution flow:
   - `01_instance_generation_from_workbook.ipynb`
@@ -76,6 +78,10 @@ In our project, the iterated-greedy implementation delivered the strongest overa
 The repository includes a compact figure comparing objective values and runtimes across the six benchmark extensions.
 
 ![PPP method comparison](figures/extension_method_comparison.png)
+
+It also includes a compact final table figure summarizing the strongest result achieved in each extension.
+
+![PPP final results table](figures/final_results_table.png)
 
 ## What the public code now shows
 
