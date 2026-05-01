@@ -1,6 +1,6 @@
 # Computational Results Summary
 
-The original executed project reported six extensions. The summary below is based on the stored text output exported from the full local project.
+The original executed project reported six benchmark extensions. The summary below condenses the final method-level results for each one.
 
 ## Extension overview
 
@@ -15,43 +15,42 @@ The original executed project reported six extensions. The summary below is base
 
 ## Method comparison snapshot
 
-### Extension 0 — `R || Cmax`
+### Extension 0 - `R || Cmax`
 
 - Iterated Greedy: `168.00`
 - Genetic algorithm: `170.00`
 - CP-SAT: `200.00`
 
-### Extension 1 — `R | rj | Cmax`
+### Extension 1 - `R | rj | Cmax`
 
 - Iterated Greedy: `169.00`
 - Genetic algorithm: `171.00`
 - CP-SAT: `194.00`
 
-### Extension 2 — `R | rj, sijk | Cmax`
+### Extension 2 - `R | rj, sijk | Cmax`
 
 - Iterated Greedy: `195.00`
 - Genetic algorithm: `209.00`
 - CP-SAT: `670.00`
 
-### Extension 3 — `R | rj, sijk, prec | Cmax`
+### Extension 3 - `R | rj, sijk, prec | Cmax`
 
 - Iterated Greedy: `197.00`
 - Genetic algorithm: `219.00`
 - CP-SAT: `230.00`
 
-### Extension 4 — `R | rj, sijk, prec, res | Cmax`
+### Extension 4 - `R | rj, sijk, prec, res | Cmax`
 
 - Iterated Greedy: `199.00`
 - Genetic algorithm: `228.00`
 - CP-SAT: `263.00`
 
-### Extension 5 — `R | rj, sijk, prec, res | sum(wjTj)`
+### Extension 5 - `R | rj, sijk, prec, res | sum(wjTj)`
 
 - Iterated Greedy: `3060.00`
 - Genetic algorithm: `4426.00`
 - CP-SAT: `7361.00`
 
-## Public note
+## Note
 
-The full local result file also stores machine-by-machine sequences and relative-gap values. In this public export, the emphasis is placed on the benchmark extensions and method-level performance summary.
-
+The full local project also stored machine-by-machine sequences and relative-gap values. The public repository keeps the emphasis on the benchmark extensions and the method-level performance summary.
