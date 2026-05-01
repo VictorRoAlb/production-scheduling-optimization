@@ -65,7 +65,7 @@ What is intentionally excluded:
 - `Genetic algorithm`
 - `Iterated greedy`
 
-Across the stored benchmark summary, the iterated-greedy implementation was the best-performing method on all six reported extensions of the public result set.
+In our project, the iterated-greedy implementation delivered the strongest overall performance across the six benchmark extensions that were evaluated.
 
 ## Visual summary
 

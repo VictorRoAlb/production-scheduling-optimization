@@ -72,7 +72,7 @@ The iterated-greedy stage uses a classical destroy-and-repair scheme:
 - reinsert them greedily;
 - keep improvements and stop after a patience limit.
 
-According to the stored result file, this method was the strongest performer across all six reported extensions.
+In our project, this method delivered the strongest performance across the six reported benchmark extensions.
 
 ## 7. Public vs original material
 
