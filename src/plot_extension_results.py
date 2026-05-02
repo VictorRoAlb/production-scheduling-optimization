@@ -37,8 +37,9 @@ def main() -> None:
     fig, axes = plt.subplots(
         2,
         1,
-        figsize=(12.5, 9.2),
-        constrained_layout=True,
+        figsize=(12.8, 8.6),
+        constrained_layout=False,
+        gridspec_kw={"hspace": 0.38},
         facecolor="white",
     )
 
@@ -66,13 +67,13 @@ def main() -> None:
             alpha=0.94,
         )
 
-    axes[0].set_title("Objective value by benchmark extension", fontsize=15, weight="bold", pad=10)
+    axes[0].set_title("Objective value by benchmark extension", fontsize=15, weight="bold", pad=12)
     axes[0].set_ylabel("Best objective", fontsize=11)
     axes[0].set_xticks(x, extension_labels)
     axes[0].grid(axis="y", linestyle="--", alpha=0.25)
     axes[0].set_axisbelow(True)
 
-    axes[1].set_title("Runtime by benchmark extension", fontsize=15, weight="bold", pad=10)
+    axes[1].set_title("Runtime by benchmark extension", fontsize=15, weight="bold", pad=12)
     axes[1].set_ylabel("Runtime (s)", fontsize=11)
     axes[1].set_xticks(x, extension_labels)
     axes[1].set_xlabel("PPP extension", fontsize=11)
@@ -81,13 +82,14 @@ def main() -> None:
     axes[1].set_yscale("log")
 
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, bbox_to_anchor=(0.5, 1.02))
+    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, bbox_to_anchor=(0.5, 0.935))
     fig.suptitle(
         "Production scheduling benchmark: method comparison across six extensions",
         fontsize=18,
         weight="bold",
-        y=1.05,
+        y=0.985,
     )
+    fig.subplots_adjust(left=0.08, right=0.985, top=0.87, bottom=0.08)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT_PATH, dpi=220, bbox_inches="tight")

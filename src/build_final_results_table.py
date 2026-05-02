@@ -20,7 +20,7 @@ ROWS = [
 
 
 def main() -> None:
-    fig, ax = plt.subplots(figsize=(15.6, 4.9), facecolor="white")
+    fig, ax = plt.subplots(figsize=(15.8, 3.9), facecolor="white")
     ax.axis("off")
 
     col_labels = ["Extension", "Formulation", "Best method", "Best objective", "Best time (s)"]
@@ -29,12 +29,12 @@ def main() -> None:
         colLabels=col_labels,
         cellLoc="center",
         loc="center",
-        colWidths=[0.08, 0.36, 0.20, 0.16, 0.14],
+        colWidths=[0.08, 0.40, 0.18, 0.14, 0.14],
     )
 
     table.auto_set_font_size(False)
-    table.set_fontsize(10.5)
-    table.scale(1, 1.9)
+    table.set_fontsize(11.1)
+    table.scale(1, 2.15)
 
     header_color = "#DCE8F1"
     accent_color = "#EDF4E7"
@@ -52,16 +52,16 @@ def main() -> None:
             else:
                 cell.set_facecolor("white")
 
-    fig.suptitle("Final benchmark results by extension", fontsize=20, fontweight="bold", y=0.96)
+    fig.suptitle("Final benchmark results by extension", fontsize=19, fontweight="bold", y=0.93)
     fig.text(
         0.5,
-        0.07,
+        0.045,
         "Each row reports the strongest final method for one benchmark extension in the PPP project.",
         ha="center",
-        fontsize=10.4,
+        fontsize=10.2,
         color="#555555",
     )
-    fig.subplots_adjust(left=0.02, right=0.98, top=0.83, bottom=0.12)
+    fig.subplots_adjust(left=0.015, right=0.985, top=0.80, bottom=0.08)
     out_path = FIGURES / "final_results_table.png"
     fig.savefig(out_path, dpi=320, bbox_inches="tight")
     plt.close(fig)
