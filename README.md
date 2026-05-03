@@ -1,10 +1,10 @@
 # Production Planning and Parallel Machine Scheduling
 
-Public repository for a production-planning and scheduling coursework project focused on unrelated parallel machines with progressively richer constraint sets.
+In this repository I document a production-planning and scheduling coursework project focused on unrelated parallel machines with progressively richer constraint sets.
 
 ## Project focus
 
-The original work studies a scheduling benchmark built around:
+In the original work I studied a scheduling benchmark built around:
 
 - unrelated parallel machines;
 - release dates;
@@ -21,7 +21,7 @@ The original work studies a scheduling benchmark built around:
 - genetic algorithm on job permutations;
 - iterated greedy with destroy-and-repair logic.
 
-The project is organized as a sequence of six benchmark extensions, moving from the base `R || Cmax` setting to a weighted-tardiness formulation with release dates, setup times, precedence constraints and shared resources.
+I organize the project as a sequence of six benchmark extensions, moving from the base `R || Cmax` setting to a weighted-tardiness formulation with release dates, setup times, precedence constraints and shared resources.
 
 ## Public version
 
@@ -75,28 +75,28 @@ In our project, the iterated-greedy implementation delivered the strongest overa
 
 ## Visual summary
 
-The repository includes a compact figure comparing objective values and runtimes across the six benchmark extensions.
+I include a compact figure comparing objective values and runtimes across the six benchmark extensions.
 
 ![PPP method comparison](figures/extension_method_comparison.png)
 
-It also includes a compact final table figure summarizing the strongest result achieved in each extension.
+I also include a compact final table figure summarizing the strongest result achieved in each extension.
 
 ![PPP final results table](figures/final_results_table.png)
 
 ## What the public code now shows
 
-The public repository exposes the actual implementation logic used in the coursework:
+In the public repository I expose the actual implementation logic I used in the coursework:
 
 - how the Excel-based benchmark was expanded into release dates, setups, due dates, precedence arcs and resource capacities;
 - how the same benchmark was solved under six increasingly constrained scenarios;
 - how CP-SAT, a genetic algorithm and iterated greedy were compared on the same instance;
 - how result summaries, RPD calculations and machine-wise sequences were reported.
 
-The repository now also includes notebook versions of the two main execution stages so that the workflow is easier to inspect directly on GitHub.
+I also include notebook versions of the two main execution stages so the workflow is easier to inspect directly on GitHub.
 
 ## Data availability
 
-The original Excel workbook used to define and execute the full coursework instance is not published here. The public repository ships only CSV exports that are sufficient to document the benchmark structure safely.
+I do not publish the original Excel workbook used to define and execute the full coursework instance. Here I ship only CSV exports that are sufficient to document the benchmark structure safely.
 
 If you want to execute the full workflow exactly as staged in the coursework, you must provide your own compatible workbook locally and point the environment variable `PPP_WORKBOOK_PATH` to it.
 
@@ -110,4 +110,4 @@ If you want to execute the full workflow exactly as staged in the coursework, yo
 
 ## Repository note
 
-The repository avoids uploading spreadsheets and focuses instead on the technical problem structure, solver framing, algorithmic implementation and results narrative.
+I avoid uploading spreadsheets and focus instead on the technical problem structure, solver framing, algorithmic implementation and results narrative.
